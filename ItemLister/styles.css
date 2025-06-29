@@ -1,0 +1,79 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+#main-header {
+  background-color: #28a745; /* Bootstrap success green */
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Title */
+#header-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Filter Input */
+#filter {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styling */
+#addForm input[type="text"] {
+  width: 70%;
+  margin-right: 10px;
+}
+
+#addForm input[type="submit"] {
+  width: 25%;
+}
+
+/* List Items */
+#items .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Delete Button */
+.btn-danger {
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 576px) {
+  #addForm input[type="text"],
+  #addForm input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #filter {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
